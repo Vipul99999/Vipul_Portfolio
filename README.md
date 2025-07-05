@@ -45,16 +45,6 @@ bun dev
 
 ---
 
-## 📁 Folder Structure
-
-/
-├── components/
-├── pages/
-├── public/
-├── styles/
-├── data/ # Skills, experience, about info
-├── .env.local
-└── README.md
 
 
 ---
