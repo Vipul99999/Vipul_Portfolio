@@ -19,7 +19,7 @@ const Photo = () => {
           className="w-[298px] h-[298px] xl:w-[498px] xl:h-[497px] mix-blend-lighten relative" // ✅ only relative
         >
           <Image
-            src="./vipul_img.png"
+            src="./assets/vipul_photo/Vipul_Img.png"
             priority
             quality={100}
             fill
