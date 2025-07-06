@@ -126,7 +126,7 @@ export const skills: SkillsType = {
         { icon: <SiTypescript />, name: "TypeScript" },
         { icon: <FaReact />, name: "React.js" },
         { icon: <SiNextdotjs />, name: "Next.js" },
-        { icon: <SiTailwindcss />, name: "Tailwind CSS" },
+        { icon: <SiTailwindcss />, name: "Tailwind.CSS" },
         { icon: <SiFramer />, name: "Framer Motion" },
         { icon: <FaFigma />, name: "Figma" },
       ],
