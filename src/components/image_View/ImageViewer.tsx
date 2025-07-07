@@ -36,7 +36,7 @@ const ImageViewer: React.FC<PdfViewerProps> = ({
   const viewerRef = useRef<HTMLDivElement>(null);
   const lastTouchDistance = useRef<number | null>(null);
   const scaleRef = useRef(scale);
-
+const basePath = process.env.GITHUB_BASE_PATH || '';
   useEffect(() => {
     scaleRef.current = scale;
   }, [scale]);
@@ -197,7 +197,7 @@ const ImageViewer: React.FC<PdfViewerProps> = ({
 
           {/* Download */}
           <a
-            href={src}
+            href={`${basePath}/assets/vipul_Resume/Vipul_Resume_Second.pdf`} 
             download={fileName}
             className="group w-10 h-10 bg-purple-600 text-white rounded hover:bg-purple-700 inline-flex items-center justify-center relative"
           >
