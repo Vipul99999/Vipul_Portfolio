@@ -28,8 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={jetbrainsMono.variable}>
       <head />
-      <body className="text-white bg-gradient-to-r from-purple-500 via-pink-500  to-blue-500  animate-gradient bg-[length:200%_200%]">
-
+      <body className="text-white bg-gradient-to-r from-fuchsia-600 via-pink-500 to-rose-400 animate-gradient bg-[length:200%_200%]">
        
         <Header />
         {/* <StairTransition/> */}

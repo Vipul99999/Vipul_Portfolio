@@ -1,30 +1,27 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { FiDownload } from "react-icons/fi";
 import Social from "@/components/Social";
-import  Photo  from "@/components/Photo";
+import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
 import HeroText from "@/components/HeroText";
+import React from "react";
+import ResumeButton from "@/components/image_View/ResumeButton";
 
 export default function Home() {
+  
+
   return (
-    
-    <div className="pt-12 pb-12"> {/* Use padding instead of fixed height */}
+    <div className="pt-12 pb-12">
+      {" "}
+      {/* Use padding instead of fixed height */}
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row items-center justify-between gap-8">
           {/* Text Content */}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            
-            <HeroText/>
+            <HeroText />
             <div className="flex flex-col  xl:flex-row items-center gap-8">
-              <Button
-               variant="outline" 
-               size="lg" 
-               className="uppercase flex bg-green-100 items-center mt-10 gap-2">
-                <span>Download CV</span>
-                <FiDownload className="text-xl" />
-              </Button>
+              <ResumeButton/>
+
               <div className="mb-8 xl:mb-0">
                 <Social
                   containerStyles="flex gap-6 mt-10"
@@ -41,9 +38,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-
       <Stats />
     </div>
-    
   );
 }
