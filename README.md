@@ -7,7 +7,7 @@ This is my personal **developer portfolio** showcasing my projects, skills, and 
 
 <!-- ## 🚀 Live Demo
 
-🌐 [Visit Portfolio](https://your-live-link.com)  
+🌐 [Visit Portfolio]([https://your-live-link.com](https://vipul99999.github.io/Vipul_Portfolio/))  
 📫 [Email me](mailto:vipul20020308@gmail.com) -->
 
 ---
@@ -28,9 +28,8 @@ bun dev
 ## 🧰 Tech Stack
 
 - **Frontend**: React.js, Next.js, Tailwind CSS, Framer Motion
-- **Backend**: Node.js, Express.js, MongoDB
 - **Languages**: JavaScript, TypeScript, Python, C/C++
-- **Tools**: Git, GitHub, Vercel, Figma, Redux Toolkit, Firebase
+- **Tools**: Git, GitHub, Vercel, Figma
 
 ---
 
@@ -41,8 +40,6 @@ bun dev
 - 📜 Resume with education & experience
 - 💡 Interactive UI with `Framer Motion`
 - 📱 Fully responsive for all devices
-- 🌙 Dark mode-ready (if applicable)
-
 ---
 
 
