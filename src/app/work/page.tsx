@@ -16,88 +16,9 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import WorkSliderBtns from "@/components/WorkSliderBtns";
-// import type { Project } from "@/types/project";
+import { projects,Project } from "@/utils/resume_data/work_data/workData";
 
-// types/project.ts
-export interface TechStackItem {
-  name: string;
-  icon?: React.ReactNode;
-}
 
-export interface Project {
-  id: string;
-  num: string;
-  category: "frontend" | "backend" | "fullstack" | "mobile" | "design";
-  title: string;
-  description: string;
-  stack: TechStackItem[];
-  image: string;
-  images?: string[];
-  live: string;
-  github: string;
-  repoPrivate?: boolean;
-  tags?: string[];
-  featured?: boolean;
-  date?: string;
-}
-
-const projects: Project[] = [
-  {
-    id: "project-1",
-    num: "01",
-    category: "frontend",
-    title: "Portfolio",
-    description:
-      "Built with Next.js, this responsive portfolio showcases my skills, projects, and experience. It features smooth navigation, optimized performance, and modern UI design using React components and Tailwind CSS. Deployed for fast access and SEO-ready.",
-    stack: [
-      { name: "Next.js" },
-      { name: "TypeScript" },
-      { name: "Tailwind CSS" },
-      { name: "Framer motion" },
-    ],
-    image: "./assets/work/Vipul_Portfolio.png",
-    live: "",
-    github: "https://github.com/Vipul99999/Vipul_Portfolio.git",
-  },
-
-  {
-    id: "project-2",
-    num: "02",
-    category: "fullstack",
-    title: "Face Detection Attendance System",
-    description:
-      "Created a system using Deep learning for real-time face recognition and automatic attendance logging.",
-    stack: [
-      { name: "React.js" },
-      { name: "Tailwind CSS" },
-      { name: "Python" },
-      { name: "OpenCv" },
-      { name: "MongoDb" },
-    ],
-    image: "./assets/work/Face_Recognition_UI.png",
-    live: "",
-    github:
-      "https://github.com/Vipul99999/Face-Detection-Attendance-System.git",
-  },
-  {
-    id: "project-3",
-    num: "03",
-    category: "fullstack",
-    title: "ToDoList App",
-    description:
-      "A modern and responsive frontend sample project built with React.js, TypeScript, and Tailwind CSS. It features smooth animations using Framer Motion and connects to a MongoDB backend, making it a solid full-stack example for learning or prototyping.",
-    stack: [
-      { name: "Tailwind.css" },
-      { name: "TypeScript" },
-      { name: "React.js" },
-      { name: "Framer motion" },
-      { name: "MongoDB" },
-    ],
-    image: "./assets/work/ToDoList_UI.png",
-    live: "",
-    github: "https://github.com/Vipul99999/ToDoList_App.git",
-  },
-];
 
 const Work = () => {
   const [project, setProject] = useState<Project>(projects[0]);
@@ -126,34 +47,34 @@ const Work = () => {
               </div>
               <h2
                 className="
-    text-4xl              /* 42px approx */
-    font-extrabold        /* bolder than font-bold */
-    text-white
-    capitalize
-    group-hover:text-accent
-    transition-colors     /* smoother and more specific transition */
-    duration-500
-    mb-2                  /* margin bottom for spacing */
-    tracking-wide         /* letter spacing for better readability */
-    drop-shadow-md        /* subtle shadow for text pop */
-  "
+                      text-4xl             
+                      font-extrabold        
+                      text-white
+                      capitalize
+                      group-hover:text-accent
+                      transition-colors     
+                      duration-500
+                      mb-2                  
+                      tracking-wide         
+                      drop-shadow-md        
+                    "
               >
                 {project.category} project
               </h2>
 
               <h3
                 className="
-    text-3xl              /* 50px */
-    font-extrabold
-    text-green-500
-    capitalize
-    group-hover:text-accent
-    transition-colors
-    duration-500
-    leading-tight         /* tighter line height for a crisp look */
-    tracking-wide
-    drop-shadow-lg        /* stronger shadow for emphasis */
-  "
+                        text-3xl              
+                        font-extrabold
+                        text-green-500
+                        capitalize
+                        group-hover:text-accent
+                        transition-colors
+                        duration-500
+                        leading-tight         
+                        tracking-wide
+                        drop-shadow-lg        
+                      "
               >
                 {project.title}
               </h3>
@@ -162,7 +83,7 @@ const Work = () => {
 
               <ul className="flex flex-wrap gap-2">
                 {project.stack.map((tech, index) => (
-                  <li key={index} className="text-green-800  text-lg">
+                  <li key={index} className="text-accent  text-lg">
                     {tech.name}
                     {index !== project.stack.length - 1 && ","}
                   </li>
@@ -223,22 +144,22 @@ const Work = () => {
               ))}
 
               <WorkSliderBtns
-  containerStyles="
-  absolute z-20 
-  top-1/2 left-0 right-0 
-  flex justify-between px-4 
-  -translate-y-1/2
-  xl:top-auto xl:bottom-4 xl:right-4 xl:left-auto xl:translate-y-0 
-  xl:flex-row xl:justify-center xl:items-center xl:space-x-2 xl:w-[200px]
-"
+            containerStyles="
+            absolute z-20 
+            top-1/2 left-0 right-0 
+            flex justify-between px-4 
+            -translate-y-1/2
+            xl:top-auto xl:bottom-4 xl:right-4 xl:left-auto xl:translate-y-0 
+            xl:flex-row xl:justify-center xl:items-center xl:space-x-2 xl:w-[200px]
+          "
 
-  btnStyles="
-    bg-accent hover:bg-accent-hover 
-    text-primary text-[22px] 
-    w-[44px] h-[44px] 
-    flex justify-center items-center 
-    transition-all rounded-full shadow-md
-  "
+            btnStyles="
+              bg-accent hover:bg-accent-hover 
+              text-primary text-[22px] 
+              w-[44px] h-[44px] 
+              flex justify-center items-center 
+              transition-all rounded-full shadow-md
+            "
   iconsStyles="w-5 h-5"
 />
 

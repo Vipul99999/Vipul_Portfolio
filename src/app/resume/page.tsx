@@ -10,7 +10,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 
-import { skills, about, experience, education } from "./data";
+import { skills, about, experience, education ,tabData } from "@/utils/resume_data/Data"
 
 export default function Resume() {
   return (
@@ -37,10 +37,16 @@ export default function Resume() {
     xl:w-full xl:max-w-[380px] xl:mx-0
   "
           >
-            <TabsTrigger value="experience"> Experience</TabsTrigger>
-            <TabsTrigger value="education"> Education</TabsTrigger>
-            <TabsTrigger value="skills"> Skills</TabsTrigger>
-            <TabsTrigger value="about"> About me</TabsTrigger>
+           {tabData.map((tab) => (
+        <TabsTrigger
+          key={tab.value}
+          value={tab.value}
+          className="flex items-center gap-2"
+        >
+          {tab.icon}
+          <span>{tab.label}</span>
+        </TabsTrigger>
+      ))}
           </TabsList>
 
           <div
@@ -94,9 +100,6 @@ export default function Resume() {
             <TabsContent value="education" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left mb-2">
                 <h3 className="text-4xl font-bold">{education.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
-                  {education.description}
-                </p>
 
                <ScrollArea
   className="
@@ -161,6 +164,7 @@ export default function Resume() {
                                   <div className="text-3xl mb-2 text-[#00f7ff]">
                                     {skill.icon}
                                   </div>
+                                    {skill.name}
                                 </div>
                               </TooltipTrigger>
                               <TooltipContent

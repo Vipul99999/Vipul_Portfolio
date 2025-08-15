@@ -1,18 +1,14 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import { stats } from "@/utils/resume_data/Stats/statsData";
 
 // Dynamically import CountUp to reduce initial bundle
 const CountUp = dynamic(() => import("react-countup"), {
   ssr: false,
 });
 
-const stats = [
-  { num: 1, text: "Years of experience" },
-  { num: 4, text: "Projects completed" },
-  { num: 9, text: "Technologies mastered" },
-  { num: 50, text: "Code commits" },
-];
+
 
 export default function Stats() {
   return (

@@ -1,41 +1,21 @@
 "use client";
 
-import React, { useState } from "react";
-import ImageViewer from "@/components/image_View/ImageViewer"; // adjust path as needed
+import React from "react";
 import { Button } from "@/components/ui/button";
-import { AnimatePresence, motion } from "framer-motion";
 
-const ResumeButton = () => {
-  const [showViewer, setShowViewer] = useState(false);
+const ResumeButton: React.FC = () => {
+  const resumeSrc = "/assets/vipul_Resume/Vipul_Resume.pdf";
 
   return (
-    <div>
+    <div className="flex justify-center mt-10">
       <Button
         variant="outline"
-        size="lg"
-        onClick={() => setShowViewer(true)}
-        className="uppercase flex bg-green-100 items-center mt-10 gap-2"
+        size="md"
+        className="uppercase flex bg-green-100 items-center gap-2"
+        onClick={() => window.open(resumeSrc, "_blank")}
       >
-        <span>View CV</span>
+        View CV
       </Button>
-
-      <AnimatePresence>
-        {showViewer && (
-          <motion.div
-            key="resume-viewer"
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.95 }}
-            transition={{ duration: 0.3, ease: "easeInOut" }}
-          >
-            <ImageViewer
-              src="/assets/vipul_Resume/Vipul_Resume_Second.pdf"
-              alt="Vipul Resume"
-              onClose={() => setShowViewer(false)}
-            />
-          </motion.div>
-        )}
-      </AnimatePresence>
     </div>
   );
 };

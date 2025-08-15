@@ -3,51 +3,9 @@
 import { BsArrowDownRight } from "react-icons/bs";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import  {services}  from "@/utils/resume_data/servises/servicesData";
 
- const services = [
-  {
-    num: "01",
-    title: "Web Development",
-    description:
-      "Skilled in building responsive, user-friendly websites using HTML, CSS, and JavaScript. Experienced in modern frameworks like React to create dynamic web applications.",
-    href: "#",
-  },
-  {
-    num: "02",
-    title: "UI/UX Design",
-    description:
-      "Proficient in designing clean, intuitive interfaces that enhance user experience using tools like Figma and Adobe XD.",
-    href: "#",
-  },
-  {
-    num: "03",
-    title: "Machine Learning",
-    description:
-      "Basic knowledge of machine learning concepts, algorithms, and frameworks like scikit-learn and TensorFlow. Able to build and train models to solve real-world problems.",
-    href: "#",
-  },
-  {
-  num: "04",
-  title: "Artificial Intelligence",
-  description:
-    "Basic understanding of AI concepts including natural language processing and computer vision. Hands-on experience with Python libraries like OpenCV to explore AI applications.",
-  href: "#",
-},
-{
-  num: "05",
-  title: "Backend Development",
-  description:
-    "Basic knowledge of backend technologies including Node.js , Django and Express.js. Familiar with RESTful,GraphQl API development, databases like MongoDB, and server-side logic implementation.",
-  href: "#",
-},
-  {
-    num: "06",
-    title: "SEO",
-    description:
-      "Understanding of SEO best practices to optimize websites for better visibility and search engine rankings.",
-    href: "#",
-  },
-];
+ 
 
 const Services = () => {
   return (
@@ -77,7 +35,7 @@ const Services = () => {
                   </span>
                   <Link
                     href={service.href}
-                    className="w-[70px] h-[70px] rounded-full bg-gradient-to-r from-purple-500 via-green-400 
+                    className="w-[70px] h-[70px] rounded-full bg-gradient-to-r from-purple-400 via-green-400 
                      to-blue-500  animate-gradientSlow bg-[length:200%_200%]
                     group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45"
                   >
@@ -91,7 +49,7 @@ const Services = () => {
                 >
                   <span
   className="
-    bg-gradient-to-r from-green-800 via-blue-800 to-gray-800 
+    bg-gradient-to-r from-green-800 via-blue-800 to-red-600 
     bg-clip-text text-transparent 
     animate-gradient 
     bg-[length:200%_200%]
