@@ -4,7 +4,8 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 
 const ResumeButton: React.FC = () => {
-  const resumeSrc = "/assets/vipul_Resume/Vipul_Resume.pdf";
+  // const resumeSrc = "/assets/Vipul_Resume.pdf";
+  const resumeSrc = "https://github.com/Vipul99999/Vipul_Portfolio/raw/main/starter-template/public/Vipul_Resume.pdf";
 
   return (
     <div className="flex justify-center mt-10">
