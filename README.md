@@ -6,7 +6,7 @@ This is my personal **developer portfolio** showcasing my projects, skills, and 
 ---
 
 <!-- ## 🚀 Live Demo
- ![Portfolio Demo](Portfoliodemo.gif)
+ ![Portfolio Demo](/Portfoliodemo.gif)
  ---
 🌐 [Visit Portfolio]([https://your-live-link.com](https://vipul99999.github.io/Vipul_Portfolio/))  
 📫 [Email me](mailto:vipul20020308@gmail.com) -->
