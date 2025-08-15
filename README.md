@@ -10,9 +10,8 @@ This is my personal **developer portfolio** showcasing my projects, skills, and 
 ![Portfolio Demo](Portfoliodemo.gif)
 
  ---
-🌐 [Visit Portfolio]([https://your-live-link.com](https://vipul99999.github.io/Vipul_Portfolio/))  
-📫 [Email me](mailto:vipul20020308@gmail.com) -->
-
+🌐 [Visit Portfolio](https://vipul99999.github.io/Vipul_Portfolio/)  
+📫 [Email me](mailto:vipul20020308@gmail.com)
 ---
 ## Getting Started
 
