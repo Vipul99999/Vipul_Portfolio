@@ -50,8 +50,8 @@ jobs:
       # Step 6: Ensure resume PDF is copied to output folder
       - name: Copy resume PDF to output
         run: |
-          mkdir -p out/assets
-          cp public/Vipul_Resume.pdf out/assets/
+          mkdir -p out/Vipul_Portfolio
+          cp public/Vipul_Resume.pdf out/Vipul_Portfolio/
 
       # Step 7: Upload artifact for GitHub Pages
       - name: Upload artifact

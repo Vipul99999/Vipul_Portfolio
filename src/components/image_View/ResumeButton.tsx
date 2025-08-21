@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button";
 const ResumeButton: React.FC = () => {
   // Use basePath for GitHub Pages project site
   
-  // const resumeSrc = "/Vipul_Resume.pdf"; 
   const resumeSrc = "/Vipul_Portfolio/Vipul_Resume.pdf"; // 🔹 include repo name
   return (
     <div className="flex justify-center mt-10">
