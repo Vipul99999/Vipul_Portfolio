@@ -4,9 +4,9 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 
 const ResumeButton: React.FC = () => {
-  // const resumeSrc = "/assets/Vipul_Resume.pdf";
-  const resumeSrc = "https://github.com/Vipul99999/Vipul_Portfolio/raw/main/starter-template/public/Vipul_Resume.pdf";
-
+  // Public folder files can be accessed directly from root
+  const resumeSrc = "/Vipul_Resume.pdf";
+  
   return (
     <div className="flex justify-center mt-10">
       <Button
