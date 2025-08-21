@@ -46,7 +46,7 @@ jobs:
       - name: Build Next.js
         run: |
           npm run build
-          npm run export # 🔹 important for static expor
+  
       # Step 6: Ensure resume PDF is copied to output folder
       - name: Copy resume PDF to output
         run: |

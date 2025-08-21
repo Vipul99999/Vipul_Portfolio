@@ -3,8 +3,8 @@ const nextConfig = {
   
 
   
-  // output: 'export', // Enables static HTML export (required for GitHub Pages)
-  basePath: process.env.GITHUB_BASE_PATH || '',  // If your site is served from a subpath
+  output: 'export', // Enables static HTML export (required for GitHub Pages)
+  basePath: process.env.GITHUB_BASE_PATH || '/Vipul_Portfolio',  // If your site is served from a subpath
   images: { unoptimized: true }, // disables Next.js image optimization, required for static export
 
   
